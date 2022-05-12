@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        @media screen and (min-width: 768px) {
+            .navbar .menu {
+                display: none;
+            }
+
+            .logo a {
+                font-size: 40px;
+                color: white;
+                margin-left: 24px;
+                text-decoration: none;
+            }
+
+            .top-lg {
+                padding-right: 20px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 28px;
+                display: flex;
+                justify-content: right;
+            }
+
+            .navbar {
+                padding-top: 40px;
+            }
+
+            .logo {
+                font-size: 33px;
+                padding-left: 30px;
+            }
+
+            .topper {
+                padding-right: 20px;
+            }
+
+            .banner h1 {
+                width: 100%;
+                color: white;
+                text-shadow: 0 0 10px rgb(255, 255, 255);
+                font-size: 10.2vw;
+                display: inline-flex;
+                position: absolute;
+                bottom:60px;
+                animation: textShadow linear 3s infinite;
+            }
+
+            .ball {
+                fill: rgb(222, 192, 208);
+                width: 12vw;
+                height: 12vw;
+                border-radius: 50% 50%;
+                position: absolute;
+                bottom: 15%;
+                right: 6%;
+                animation: ballroll linear 8s infinite;
+            }
+
+            /* ========== */
+            .product {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding-top: 60px;
+            }
+
+            .pro-pic {
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.361);
+                Width: 350px;
+                padding: 15px;
+                margin: 0 20px 80px 20px;
+                box-shadow: 2px 5px 15px rgb(46, 46, 46);
+                transition: ease-in-out .4s;
+            }
+            .pro-pic:nth-child(1) img{
+                object-position:  0% 90%;
+            }
+            .pro-pic:nth-child(4) img{
+                object-position:  50% 20%;
+            }
+            .pro-pic:nth-child(5) img{
+                object-position:  50% 30%;
+            }
+            .pro-pic:nth-child(6) img{
+                object-position:  50% 30%;
+            }
+            .pro-pic:nth-child(10) img{
+                object-position:  50% 45%;
+            }
+            .pro-pic:nth-child(8) img{
+                object-position:  50% 60%;
+            }
+
+            .pro-pic img {
+                width: 100%;
+                height: 60%;
+                object-fit:cover;
+                object-position:  0% 50%;
+                border-radius: 10px;
+                transition: ease-in-out .3s;
+                transform:scale(1,1);
+            }
+            .pro-pic:hover img {
+                transform:scale(.95,.95);
+                transition: ease-in-out .4s;
+            }
+            .pro-pic:hover  {
+                box-shadow: 0 0 0  rgb(255, 255, 255);
+                transition: ease-in-out .5s;
+                
+            }
+            .pro-text h1 {
+                margin-top: 15px;
+                width: 100%;
+                color: rgb(68, 68, 68);
+                font-size: 30px;
+            }
+
+            .bord {
+                width: 90%;
+                height: 2px;
+                background: linear-gradient(to right, rgb(95, 95, 95) 40%, rgb(185, 169, 148));
+                margin-left: 40px;
+            }
+
+            .pro-text p {
+                color: rgb(68, 68, 68);
+                font-size: 12px;
+                margin: 10px 0 0px 80px;
+            }
+
+            /* ======== */
+            .bg-pic-p li {
+                margin: 5px 0;
+                text-shadow: 8px 0px 10px rgba(222, 192, 208, 0.292), 0px 0px 15px rgba(222, 192, 208, 0.461);
+                font-size: 4vw;
+                color: #fff;
+            }
+
+            .page-3-bg h1 {
+                width: 70%;
+                font-size: 4vw;
+                padding: 30px 0 80px 50px;
+                text-shadow: 5px 5px 5px rgb(225, 76, 245), 5px 5px 10px rgb(65, 255, 65), 5px 5px 15px rgb(76, 169, 245);
+            }
+
+            .page-pic {
+                width: 70%;
+                border-radius: 50px;
+                height: 40vw;
+                background: url('./MKCaramel\ ChocoPool.jpg') center center / cover no-repeat;
+                margin: 0 auto 0;
+            }
+
+            .page3-box p {
+                margin: 2vw auto 0;
+                width: 80%;
+                font-size: 2vw;
+                text-align: center;
+            }
+
+            .smile-yellow {
+                width: 25vw;
+                height: 25vw;
+                border-radius: 50% 50%;
+                position: absolute;
+                right: 0;
+                transform: translateX(50%);
+            }
+            .page3-pic-1 {
+            margin: 0 auto;
+            width: 70%;
+            border-radius: 50px;
+            height: 30vw;
+            background: url('./pinky.jpg') center center / cover no-repeat;
+        }
+
+        .yellow-box {
+            width: 150px;
+            height: 55px;
+            background-color: rgb(232, 243, 137, .5);
+            color: rgb(116, 146, 230);
+            box-shadow: 2px 2px 15px rgb(255, 248, 155),2px 2px 20px rgb(255, 255, 255);
+            border-radius: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 55px;
+            transform: rotate(15deg);
+            position: absolute;
+            top: -60px;
+            left: 140px;
+            z-index: 1;
+            transform-origin: 30% 30%;
+            animation: cir ease-out .9s infinite alternate-reverse;
+
+        }
+        .green-box {
+            width: 200px;
+            height: 55px;
+            background-color: rgba(137, 243, 211, 0.5);
+            color: rgb(255, 214, 168);
+            box-shadow: 2px 2px 15px rgb(144, 255, 212),2px 2px 20px rgb(255, 255, 255);
+            border-radius: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 55px;
+            transform: rotate(-20deg);
+            position: absolute;
+            top: -40px;
+            left: 80px;
+            transform-origin: 100% 0%;
+            animation: cir2 ease-out .9s infinite alternate-reverse;
+        }
+        .color-position{
+            position:absolute;
+            left: 10vw;
+        }
+        .page3-box-2 li {
+            font-size: 6vw;
+            line-height: 5vw; 
+            text-shadow: 0 0 15px #fff;
+        }
+        .page3-pic-2 {
+            margin: 30px auto 50px;
+            width: 70%;
+            height: 40vw;
+            border-radius: 50px;
+            background: url('./MKRoseHoney1.jpg') center center / cover no-repeat;
+        }
+        footer ul {
+            width: 100%;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+        }
+        footer ul li{
+            margin: 0 60px;
+        }
+        .footer-bottom {
+            color: rgb(255, 255, 255);
+            padding: 40px 0 80px 0;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        }
+
+        /* ================= */
+        @media screen and (max-width: 768px) {
+            .top-lg {
+                display: none;
+            }
+
+            .banner {
+                color: white;
+                text-shadow: 0 0 10px rgb(255, 255, 255);
+                font-size: 18vw;
+                line-height: 80px;
+                position: absolute;
+                bottom: 100px;
+                /* letter-spacing: -10px; */
+                animation: textShadow linear 3s infinite;
+            }
+
+            .ball {
+                fill: rgb(245, 195, 242);
+                width: 24vw;
+                height: 24vw;
+                border-radius: 50% 50%;
+                position: absolute;
+                bottom: 20%;
+                right: 6%;
+                animation: ballroll linear 8s infinite;
+            }
+
+            .pro-pic {
+                Width: 80%;
+                margin: 20px 20px;
+                border-radius: 10px;
+                padding: 0px 40px 10px;
+            }
+
+            .pro-pic img {
+                width: 100%;
+                max-width: 100%;
+                border-radius: 10px;
+                box-shadow: 2px 2px 10px rgb(46, 46, 46);
+            }
+
+            .pro-text h1 {
+                color: rgb(68, 68, 68);
+                font-size: 30px;
+                margin: 10px 0 7px 40px;
+
+            }
+
+            .bord {
+                width: 95%;
+                height: 2px;
+                background: linear-gradient(to right, rgb(85, 85, 85) 40%, rgb(185, 169, 148));
+                margin-left: 70px;
+            }
+
+            .pro-text p {
+                color: rgb(68, 68, 68);
+                font-size: 12px;
+                margin: 10px 0 0px 100px;
+            }
+
+            .product {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bg-pic-p li {
+                margin: 5px 0;
+                text-shadow: 8px 0px 10px rgb(255, 255, 255), 0px 0px 15px rgb(202, 88, 218);
+                font-size: 35px;
+                color: #fff;
+            }
+
+            .page-3-bg h1 {
+                width: 80%;
+                font-size: 30px;
+                padding: 130px 0 80px 50px;
+                text-shadow: 5px 5px 5px rgb(225, 76, 245), 5px 5px 10px rgb(65, 255, 65), 5px 5px 15px rgb(76, 169, 245);
+            }
+
+            .page-pic {
+                width: 100%;
+                border-radius: 50px;
+                height: 300px;
+                background: url('./MKCaramel\ ChocoPool.jpg') center center / cover no-repeat;
+                margin-bottom: 50px;
+            }
+
+            .page3-box p {
+                margin: 0 auto;
+                width: 80%;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .page3-pic-1 {
+            margin: 0 auto;
+            width: 80%;
+            border-radius: 50px;
+            height: 300px;
+            background: url('./pinky.jpg') center center / cover no-repeat;
+        }
+        .smile-yellow {
+                width: 200px;
+                height: 200px;
+                border-radius: 50% 50%;
+                position: absolute;
+                right: 0;
+                transform: translateX(50%);
+            }
+
+        .yellow-box {
+            width: 150px;
+            height: 55px;
+            background-color: rgb(232, 243, 137, .5);
+            color: rgb(116, 146, 230);
+            border-radius: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 55px;
+            transform: rotate(15deg);
+            position: absolute;
+            top: -60px;
+            left: 140px;
+            z-index: 1;
+            transform-origin: 30% 30%;
+            animation: cir ease-out .9s infinite alternate-reverse;
+
+        }
+        .green-box {
+            width: 200px;
+            height: 55px;
+            background-color: rgba(137, 243, 211, 0.5);
+            color: rgb(255, 214, 168);
+            border-radius: 50px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 55px;
+            transform: rotate(-20deg);
+            position: absolute;
+            top: -40px;
+            left: 80px;
+            transform-origin: 100% 0%;
+            animation: cir2 ease-out .9s infinite alternate-reverse;
+        }
+        .page3-box-2 li {
+            font-size: 50px;
+            line-height: 40px;
+            text-shadow: 0 0 15px #fff;
+        }
+        .page3-pic-2 {
+            margin: 30px auto 50px;
+            width: 100%;
+            height: 300px;
+            border-radius: 50px;
+            background: url('./MKRoseHoney1.jpg') center center / cover no-repeat;
+        }
+        footer ul {
+            width: 100%;
+            color: rgb(255, 255, 255);
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .footer-bottom {
+            color: rgb(255, 255, 255);
+            padding: 40px 0 80px 0;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        }
+
+        /* ============================ */
+        .page1 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+        }
+        .picover{
+            font-size: 22px;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar a {
+            font-size: 22px;
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .menu {
+            font-size: 17px;
+            color: white;
+            padding-right: 20px;
+            text-decoration: none;
+        }
+
+        .vdo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+
+
+
+ @keyframes textShadow {
+            0% {
+                text-shadow: 0 0 5px rgb(255, 255, 255);
+            }
+            50% {
+                text-shadow: 0 0 40px rgb(255, 255, 255);
+            }
+
+            100% {
+                text-shadow: 0 0 5px rgb(255, 255, 255);
+            }
+        }
+ @keyframes ballroll {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+       
+
+        /* ======================================== */
+
+        .backgroung-pic {
+            width: 100%;
+            height: 50vh;
+            background-attachment: fixed;
+            padding-bottom: 40px;
+        }
+        .backgroung-pic::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            background: url('./city.jpg') center center /cover no-repeat;
+            background-attachment: fixed;   
+            filter: saturate(.2) blur(3px);
+        }
+
+        .bg-pic-p {
+            padding-top: 80px;
+        }
+
+        .bg-pic-p p {
+            width: 90%;
+            text-shadow: 1px 1px 25px  rgb(0, 0, 0), 2px 2px 15px rgb(160, 81, 123);
+            font-size:100px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0 auto;
+            line-height: 60px;
+            letter-spacing: 5px;
+        }
+        .bg-pic-p p:nth-child(2){
+            font-size: 100px;
+            text-shadow: 1px 1px 25px  rgb(0, 0, 0), 2px 2px 15px rgb(160, 81, 123);
+            color:rgb(249, 203, 226);
+        }
+
+        .circle-pen {
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        .circle-pen h1 {
+            width: 230px;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 10px #fff, 4px 4px 15px rgb(222, 192, 208);
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            left: 50%;
+            z-index: 2;
+            transform: translateX(-50%);
+        }
+
+        .act-cir {
+            position: relative;
+
+        }
+
+        .arrow1 {
+            width: 50px;
+            fill: rgb(255, 255, 255);
+            position: absolute;
+            left: 50%;
+            top: 15%;
+            opacity: 0;
+
+        }
+
+        .circle-pen:hover .arrow1 {
+            animation: arrowmove ease-out .3s 1 forwards;
+        }
+
+        @keyframes arrowmove {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(-200px);
+                opacity: 1;
+            }
+        }
+
+        .cir-1 {
+            width: 300px;
+            height: 80px;
+            border: 1px solid #fff;
+            border-radius: 80% 60% 60% 80%;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        .cir-2 {
+            width: 300px;
+            height: 80px;
+            border: 1px solid #fff;
+            border-radius: 60% 60% 80% 70%;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+
+        /* =============================================== */
+
+        .page-2 {
+            width: 100%;
+            background-color: rgb(185, 169, 148);
+            padding-top: 20px;
+        }
+
+      
+
+
+
+
+        /* ====================================== */
+        .circle-pen-2 {
+            position: relative;
+        }
+
+        .circle-pen-2 h1 {
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 10px #fff, 2px 2px 20px rgb(214, 165, 191);
+            font-size: 20px;
+            text-decoration: none;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .arrow2 {
+            width: 50px;
+            fill: aliceblue;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+        }
+
+        @keyframes arrowmove2 {
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(-120px);
+            }
+        }
+
+        .circle-pen-2:hover .arrow2 {
+            animation: arrowmove2 ease-out .5s 1 forwards;
+        }
+
+        .act-cir-2 {
+            position: relative;
+        }
+
+        .cir-3 {
+            width: 300px;
+            height: 80px;
+            border: 1px solid rgb(173, 173, 173);
+            border-radius: 40% 60% 40% 80%;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cir-4 {
+            width: 300px;
+            height: 80px;
+            border: 1px solid rgb(173, 173, 173);
+            border-radius: 90% 90% 90% 90%;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box1 {
+            width: 100%;
+            height: 130px;
+
+        }
+
+
+
+        .page-2-bgc::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -2;
+            background: url(./Musee\ du\ Louvre.jpg) left center / cover no-repeat;
+            background-attachment: fixed;
+            filter: brightness(.5) blur(3px);
+
+        }
+
+
+        .page-2-bgc h2 {
+            margin-left: 50px;
+            width: 70%;
+            color: #ccc;
+            border-bottom: 2px solid #ccc;
+            font-size: 16px;
+            padding: 30px 0;
+
+        }
+
+        .bg-pic-p {
+            margin: 0 0 40px 30px;
+        }
+
+
+
+        .page-3-bg {
+            background: rgb(27, 27, 27);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+
+        .page3-box {
+            width: 80%;
+            margin: 0 auto 100px;
+
+        }
+
+
+
+
+
+        .smile-yellow svg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            fill: rgb(238, 229, 144);
+            animation: ballroll linear 8s infinite;
+        }
+
+        .smile-yellow::before {
+            content: "";
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            bottom: 1%;
+
+        }
+
+        
+
+        @keyframes cir {
+            0% {
+                transform: rotate(10deg);
+            }
+
+            100% {
+                transform: rotate(40deg);
+            }
+        }
+
+        @keyframes cir2 {
+            0% {
+                transform: rotate(deg) translateX(0px) translateY(0px);
+            }
+
+            100% {
+                transform: rotate(-60deg) translateX(-40px) translateY(-40px);
+            }
+        }
+        .color-box {
+            position: relative;
+        }
+        .page3-box-2 {
+            width: 80%;
+            margin: 60px auto;
+        }
+        .circle-pen-3 {
+            position: relative;
+        }
+
+
+
+        .arrow3 {
+            width: 50px;
+            fill: aliceblue;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .circle-pen-3:hover .arrow3 {
+            animation: arrowmove2 ease-out .5s 1 forwards;
+        }
+
+        .act-cir-3 {
+            position: relative;
+        }
+
+        .cir-5 {
+            width: 300px;
+            height: 80px;
+            border: 1px solid rgb(173, 173, 173);
+            border-radius: 40% 60% 40% 80%;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cir-6 {
+            width: 300px;
+            height: 80px;
+            border: 1px solid rgb(173, 173, 173);
+            border-radius: 90% 90% 90% 90%;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .box2 {
+            width: 100%;
+            height: 130px;
+
+        }
+
+        .circle-pen-3 h2 {
+            color: rgb(255, 255, 255);
+            background-color: rgb(17, 17, 17);
+            text-shadow: none;
+            font-size: 16px;
+            text-decoration: none;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer {
+            background-color: rgb(204, 182, 153);
+            position: relative;
+        }
+
+        .footer-text {
+            font-size: 50px;
+            padding: 60px 0 60px 20px;
+            text-shadow: 1px 5px 8px rgb(255, 238, 238);
+        }
+
+        .footer-text svg {
+            width: 30px;
+            margin-left: 10px;
+        }
+
+        .footer-ball {
+            color: #fff;
+            background: rgb(123, 190, 170);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            right: 5%;
+            top: 1%;
+            animation: ballroll linear 8s infinite;
+        }
+
+        .footer-ball p {
+            font-size: 25px;
+            text-align: center;
+            margin: 30% 0;
+            text-shadow: 2px 2px 5px rgb(255, 159, 242), 4px 4px 10px rgb(123, 108, 253), 5px 5px 15px rgb(253, 245, 124);
+        }
+
+       
+
+        footer li {
+            font-size: 18px;
+            margin: 0 10px 0;
+            text-shadow: 2px 2px 5px rgb(255, 159, 242), 4px 4px 10px rgb(123, 108, 253), 5px 5px 15px rgb(253, 245, 124);
+        }
+ 
+
+        .mail {
+            width: 100px;
+            text-shadow: 2px 2px 5px rgb(255, 159, 242), 4px 4px 10px rgb(123, 108, 253), 5px 5px 15px rgb(253, 245, 124);
+        }
+
+        .addres {
+            width: 200px;
+            text-shadow: 2px 2px 5px rgb(255, 159, 242), 4px 4px 10px rgb(123, 108, 253), 5px 5px 15px rgb(253, 245, 124);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="" class="logo">Michael Cake</a>
+            <a href="" class="menu">MENU</a>
+
+            <div class="top-lg">
+                <a href="" class="topper">WORK</a>
+                <a href="" class="topper">PLAYGROUNG</a>
+                <a href="" class="topper">CONTANT</a>
+            </div>
+        </div>
+    </nav>
+    <div class="page1">
+        <video class="vdo" playsinline="" loop="loop" autoplay="autoplay">
+            <source src="https://www.goodkidsagency.com/videos/home-hero.mp4" type="video/mp4">
+        </video>
+
+        <div class="banner">
+            <h1>MichaelCake Jun'sBake</h1>
+        </div>
+        <div class="ball">
+            <svg viewBox="0 0 35 35">
+                <path
+                    d="M17.4501 0.5C8.07771 0.5 0.5 8.07771 0.5 17.5499C0.5 26.9223 8.07771 34.5 17.4501 34.5C26.8226 34.5 34.5 26.9223 34.5 17.5499C34.4003 8.07771 26.8226 0.5 17.4501 0.5ZM9.87243 12.1657C9.87243 10.7698 10.9692 9.57331 12.4648 9.57331C13.8607 9.57331 15.0572 10.6701 15.0572 12.1657C15.0572 13.5616 13.9604 14.7581 12.4648 14.7581C11.0689 14.7581 9.87243 13.5616 9.87243 12.1657ZM21.7375 25.7258C20.6408 26.9223 19.1452 27.4208 17.4501 27.4208C11.5674 27.4208 10.9692 19.3446 10.8695 19.0455L12.8636 18.9457C12.8636 19.0455 13.3622 25.5264 17.4501 25.5264C18.6466 25.5264 19.544 25.1276 20.3416 24.4296C21.7375 22.7346 21.937 19.9428 21.937 18.9457L23.9311 18.846C23.9311 19.0455 24.0308 23.2331 21.7375 25.7258ZM22.3358 14.7581C20.9399 14.7581 19.7434 13.6613 19.7434 12.1657C19.7434 10.7698 20.8402 9.57331 22.3358 9.57331C23.7317 9.57331 24.9282 10.6701 24.9282 12.1657C24.9282 13.5616 23.7317 14.7581 22.3358 14.7581Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <section>
+        <div class="backgroung-pic">
+            <div class="bg-pic-p">
+                <p>Not your typical agency.</p>
+                <p>We are your next set of</p>
+                <p>creative innovation experts.</p>
+
+
+                <div class="circle-pen">
+                    <a href="#">
+
+                        <div class="act-cir">
+                            <h1>WATCH OUR TRAILER</h1>
+                            <svg class="arrow1" viewBox="0 0 37 11" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5 4.80001H29.5C32 4.80001 32.1 4.60001 30.8 2.40001C30.6 2.00001 30.3 1.60001 30.2 1.10001C30.1 0.900005 30.3 0.40001 30.5 0.30001C30.7 0.20001 31.2 0.10001 31.4 0.30001C33.1 1.90001 34.8 3.4 36.4 5.2C37.2 6.1 36.5 7.10001 35.5 7.60001C34 8.40001 32.8 9.10001 31.3 9.80001C30.7 10.1 30.1 10.7 29.6 10.5C28.9 10.2 29.4 9.20001 29.8 8.80001C32.2 6.60001 32.3 6.90001 28.1 7.00001C23.9 7.10001 19.5 7.00001 15.4 7.00001H3.9C2.9 7.00001 2 6.80001 1 6.60001C0.8 6.50001 0.5 6.10001 0.5 5.80001C0.5 5.60001 0.799998 5.2 1.1 5.2C2.6 5.1 4.1 5.00001 5.6 5.00001C9.2 4.80001 12.9 4.80001 16.5 4.80001V4.80001Z">
+                                </path>
+                            </svg>
+                            <div class="cir-1"></div>
+                            <div class="cir-2"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page-2">
+            <div class="product">
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./0001.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./002.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./003.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./005.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./006.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./007.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div><div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./110.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./111.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./112.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./113.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./114.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-pic">
+                    <a href="#" class="picover">
+                        <img src="./115.jpg" alt="">
+                        <div class="pro-text">
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <div class="bord"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, modi.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="page-2-bgc">
+            <div class="box1">
+                <div class="circle-pen-2">
+                    <a href="#">
+
+
+                        <div class="act-cir-2">
+                            <h1>THE WORK</h1> <svg class="arrow2" viewBox="0 0 37 11"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5 4.80001H29.5C32 4.80001 32.1 4.60001 30.8 2.40001C30.6 2.00001 30.3 1.60001 30.2 1.10001C30.1 0.900005 30.3 0.40001 30.5 0.30001C30.7 0.20001 31.2 0.10001 31.4 0.30001C33.1 1.90001 34.8 3.4 36.4 5.2C37.2 6.1 36.5 7.10001 35.5 7.60001C34 8.40001 32.8 9.10001 31.3 9.80001C30.7 10.1 30.1 10.7 29.6 10.5C28.9 10.2 29.4 9.20001 29.8 8.80001C32.2 6.60001 32.3 6.90001 28.1 7.00001C23.9 7.10001 19.5 7.00001 15.4 7.00001H3.9C2.9 7.00001 2 6.80001 1 6.60001C0.8 6.50001 0.5 6.10001 0.5 5.80001C0.5 5.60001 0.799998 5.2 1.1 5.2C2.6 5.1 4.1 5.00001 5.6 5.00001C9.2 4.80001 12.9 4.80001 16.5 4.80001V4.80001Z">
+                                </path>
+                            </svg>
+                            <div class="cir-3"></div>
+                            <div class="cir-4"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <h2>CLIENTS WE STAND FOR</h2>
+            <ul class="bg-pic-p">
+                <li>DAVIDOFF</li>
+                <li>SHISEIDO</li>
+                <li>CHAUMET</li>
+                <li>DOLCE&GABANNA</li>
+                <li>NARCISO</li>
+                <li>ZADIG & VOLTAIRE</li>
+            </ul>
+        </div>
+
+        <div class="page-3-bg">
+
+            <div class="smile-yellow">
+                <svg viewBox="0 0 35 35">
+                    <path
+                        d="M17.4501 0.5C8.07771 0.5 0.5 8.07771 0.5 17.5499C0.5 26.9223 8.07771 34.5 17.4501 34.5C26.8226 34.5 34.5 26.9223 34.5 17.5499C34.4003 8.07771 26.8226 0.5 17.4501 0.5ZM9.87243 12.1657C9.87243 10.7698 10.9692 9.57331 12.4648 9.57331C13.8607 9.57331 15.0572 10.6701 15.0572 12.1657C15.0572 13.5616 13.9604 14.7581 12.4648 14.7581C11.0689 14.7581 9.87243 13.5616 9.87243 12.1657ZM21.7375 25.7258C20.6408 26.9223 19.1452 27.4208 17.4501 27.4208C11.5674 27.4208 10.9692 19.3446 10.8695 19.0455L12.8636 18.9457C12.8636 19.0455 13.3622 25.5264 17.4501 25.5264C18.6466 25.5264 19.544 25.1276 20.3416 24.4296C21.7375 22.7346 21.937 19.9428 21.937 18.9457L23.9311 18.846C23.9311 19.0455 24.0308 23.2331 21.7375 25.7258ZM22.3358 14.7581C20.9399 14.7581 19.7434 13.6613 19.7434 12.1657C19.7434 10.7698 20.8402 9.57331 22.3358 9.57331C23.7317 9.57331 24.9282 10.6701 24.9282 12.1657C24.9282 13.5616 23.7317 14.7581 22.3358 14.7581Z">
+                    </path>
+                </svg>
+            </div>
+            <h1>We are relentless.
+                And we work with the
+                best in the industry.</h1>
+            <div class="page3-box">
+                <div class="page-pic"></div>
+                <p>new rules, same us — We are committed to delivering unparalleled art direction &
+                    pioneeringtechnology.</p>
+            </div>
+            <div class="page3-pic-1"></div>
+            <div class="color-box">
+                <div class="color-position">
+                    <div class="yellow-box">
+                        <p>Paris</p>
+                    </div>
+                    <div class="green-box">
+                        <p>Bordeaux</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page3-box-2">
+                <ul>
+                    <li>CREATIVE</li>
+                    <li>HOTSHOP FOR</li>
+                    <li>DARING</li>
+                    <li>BRANDS
+                    </li>
+                </ul>
+                <div class="page3-pic-2"></div>
+                <div class="box2">
+                    <div class="circle-pen-3">
+                        <a href="#">
+                            <div class="act-cir-3">     <svg class="arrow3" viewBox="0 0 37 11" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5 4.80001H29.5C32 4.80001 32.1 4.60001 30.8 2.40001C30.6 2.00001 30.3 1.60001 30.2 1.10001C30.1 0.900005 30.3 0.40001 30.5 0.30001C30.7 0.20001 31.2 0.10001 31.4 0.30001C33.1 1.90001 34.8 3.4 36.4 5.2C37.2 6.1 36.5 7.10001 35.5 7.60001C34 8.40001 32.8 9.10001 31.3 9.80001C30.7 10.1 30.1 10.7 29.6 10.5C28.9 10.2 29.4 9.20001 29.8 8.80001C32.2 6.60001 32.3 6.90001 28.1 7.00001C23.9 7.10001 19.5 7.00001 15.4 7.00001H3.9C2.9 7.00001 2 6.80001 1 6.60001C0.8 6.50001 0.5 6.10001 0.5 5.80001C0.5 5.60001 0.799998 5.2 1.1 5.2C2.6 5.1 4.1 5.00001 5.6 5.00001C9.2 4.80001 12.9 4.80001 16.5 4.80001V4.80001Z">
+                                </path>
+                            </svg>
+                            <h2>THE PLAYGROUND</h2>
+                                <div class="cir-5"></div>
+                                <div class="cir-6"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-text">
+            <h1>Join the</h1>
+            <h1>playground<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 44" class="">
+                    <path
+                        d="M11.8,9.1 C11.7,4.7 13.4,2.3 16.5,2.3 C19.4,2.3 21.6,4.4 21.6,7.2 C21.7,10.3 19.3,13 16.2,13.1 C13.5,13.3 11.9,11.8 11.8,9.1 Z"
+                        class="smiley-eye"></path>
+                    <path
+                        d="M31.8,6.7 C31.7,3.3 33.6,0.5 36.1,0.4 C38.7,0.3 41.6,3.4 41.7,6.4 C41.9,9.5 39.6,11.9 36.5,11.9 C33.7,11.9 31.9,9.9 31.8,6.7 Z"
+                        class="smiley-eye"></path>
+                    <path
+                        d="M0.6,25.1 C1.4,24 2.1,22.5 3,22.2 C4.2,21.9 5.7,22.6 6.9,23.2 C7.5,23.5 7.8,24.6 8.2,25.3 C12.2,31.4 17.9,34.7 25,35.8 C28.5,36.4 31.6,35.8 34,32.9 C35.4,31.2 36.9,29.6 38.4,28.1 C40,26.5 41.9,25.1 44,26.9 C46.1,28.7 45.2,30.8 43.7,32.6 C43.6,32.7 43.5,32.8 43.4,33 C34.1,46.4 23.8,45.5 10,37.2 C7,35.4 4.8,32.1 2.5,29.3 C1.8,28.4 1.4,26.8 0.6,25.1 Z">
+                    </path>
+                </svg></h1>
+
+
+            <div class="footer-ball">
+                <p>CALL ME BACK</p>
+            </div>
+        </div>
+        <ul>
+            <li>Goodkids.</li>
+            <li>INSTAGRAM</li>
+            <li>FACEBOOK</li>
+            <li>TWITTER</li>
+        </ul>
+        <div class="footer-bottom">
+            <div class="mail">
+                <p>michaelexgt@gmail.com</p>
+                <p>asdvxchaelexgt@yahoo.com.tw</p>
+            </div>
+            <div class="addres">
+                <p>sit amet consectetur adipisicing elit Aliquam, deserunt.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
