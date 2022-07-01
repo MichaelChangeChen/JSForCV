@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    #apiTest {
+      margin: 10px auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .cards {
+      margin: 0 auto;
+      width: 80%;
+      border-radius: 5px;
+      border: 1px solid rgb(116, 116, 116);
+      padding: 15px;
+      transition: 0.3s ease-in-out;
+    }
+    .cards:hover {
+      box-shadow: 3px 3px 8px rgb(73, 73, 73);
+      transition: 0.3s ease-in-out;
+    }
+    .cards h1 {
+      width: 100%;
+      overflow-wrap: break-word;
+      margin-top: -5px;
+    }
+    .cards p {
+      width: 100%;
+      overflow-wrap: break-word;
+      margin: 0 0 10px 0;
+    }
+    @media (min-width: 576px) {
+      #apiTest {
+        gap: 2px;
+      }
+      .cards {
+        margin: 0;
+        width: 40%;
+      }
+    }
+    .aa {
+      box-shadow: 0px 2px 12px #000;
+      width: 150px;
+      height: 50px;
+      background: pink;
+      transition: 0.5s ease-in-out;
+    }
+    .bb {
+      box-shadow: 0px 5px 12px #000;
+      width: 150px;
+      height: 50px;
+      background: hotpink;
+      transform-origin: top;
+      transform: rotateX(-90deg);
+      transition: 0.5s ease-in-out;
+    }
+    .vv {
+      transform-origin: top;
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+      width: 200px;
+      height: 100px;
+      /* background: #000; */
+      transition: 0.2s ease-in-out;
+    }
+    .vv:hover {
+      transform: rotateX(90deg);
+      transition: 0.2s ease-in-out;
+    }
+  </style>
+  <body>
+    <h1>API撈取指定內容測驗</h1>
+    <div id="apiTest">
+
+      <div class="cards">
+        <h1>航班名稱：BR</h1>
+      </div>
+      <!-- <div class="vv">
+        <div class="aa"></div>
+        <div class="bb"></div>
+      </div> -->
+    </div>
+    <script src="/airport.js"></script>
+  </body>
+</html>
