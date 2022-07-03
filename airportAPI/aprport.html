@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
   </head>
   <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
     #apiTest {
       margin: 10px auto;
       width: 100%;
@@ -21,29 +18,45 @@
     }
     .cards {
       margin: 0 auto;
-      width: 80%;
-      border-radius: 5px;
+      width: 90%;
+      border-radius: 15px;
       border: 1px solid rgb(116, 116, 116);
-      padding: 15px;
+      padding: 20px;
       transition: 0.3s ease-in-out;
     }
     .cards:hover {
       box-shadow: 3px 3px 8px rgb(73, 73, 73);
       transition: 0.3s ease-in-out;
     }
+    .cardsTop {
+      display: flex;
+      justify-content: space-between;
+    }
+    .others {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .airlines p{
+      line-height: 10px;
+    } 
+    .flight p{
+      line-height: 10px;
+    } 
+
     .cards h1 {
+      font-size: 24px;
       width: 100%;
-      overflow-wrap: break-word;
-      margin-top: -5px;
     }
     .cards p {
+      font-size: 15px;
       width: 100%;
-      overflow-wrap: break-word;
-      margin: 0 0 10px 0;
     }
     @media (min-width: 576px) {
       #apiTest {
         gap: 2px;
+        margin: 60px auto;
       }
       .cards {
         margin: 0;
@@ -52,14 +65,14 @@
     }
     .aa {
       box-shadow: 0px 2px 12px #000;
-      width: 150px;
+      width: 100%;
       height: 50px;
       background: pink;
       transition: 0.5s ease-in-out;
     }
     .bb {
       box-shadow: 0px 5px 12px #000;
-      width: 150px;
+      width: 100%;
       height: 50px;
       background: hotpink;
       transform-origin: top;
@@ -70,7 +83,7 @@
       transform-origin: top;
       transform: rotateY(0deg);
       transform-style: preserve-3d;
-      width: 200px;
+      width: 75%;
       height: 100px;
       /* background: #000; */
       transition: 0.2s ease-in-out;
@@ -81,16 +94,53 @@
     }
   </style>
   <body>
-    <h1>API撈取指定內容測驗</h1>
     <div id="apiTest">
-
       <div class="cards">
-        <h1>航班名稱：BR</h1>
+        <div class="cardsTop">
+          <div class="airlines">
+            <h1>
+              <p>航空公司</p>
+              Airlines: 長榮航空
+            </h1>
+          </div>
+          <div class="flight">
+            <h1>
+              <p>班次</p>
+              Flight No.: BR-59
+            </h1>
+          </div>
+          <div class="others">
+            <p>FROM: TPE</p>
+            <p>TO: AKL</p>
+            <p>Term.: 2</p>
+            <p>Gate: D1</p>
+          </div>
+        </div>
+        <div class="vv">
+          <div class="aa"><h1>STD.: 2022-06-30T00:45</h1></div>
+          <div class="bb"><h1>ETD.: 2022-06-30T00:30</h1></div>
+        </div>
+        <div class="cardsBotton">
+          <p>Remarks:出發DEPARTED</p>
+          <p>Update:2022-07-01T15:20:19+08:00</p>
+        </div>
       </div>
-      <!-- <div class="vv">
-        <div class="aa"></div>
-        <div class="bb"></div>
-      </div> -->
+
+      <!-- 
+原定出發時間// ScheduleDepartureTime: "2022-06-30T00:45"
+預定出發時間// EstimatedDepartureTime: "2022-06-30T00:30"
+航空公司// AirlineID: "CI"
+飛航班次// FlightNumber: "59"
+出境機場// DepartureAirportID: "TPE"
+入境機場// ArrivalAirportID: "AKL"
+飛行日期// FlightDate: "2022-06-30"
+登機門// Gate: " D1"
+航廈// Terminal: "2"
+更新時間// UpdateTime: "2022-07-01T15:20:19+08:00" 
+實際出發時間// ActualDepartureTime: "2022-06-30T00:30"
+出發備註// DepartureRemark: "出發DEPARTED"
+
+-->
     </div>
     <script src="/airport.js"></script>
   </body>
