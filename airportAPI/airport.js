@@ -1,12 +1,10 @@
 const navbtn = document.querySelector('.navBtn')
 navbtn.addEventListener('click',(e)=>{
     const navUl = document.querySelector('.navUl');
-    if(e.target.tagName === 'H1')
-    navUl.classList.toggle("showNav")
+    (e.target.tagName === 'H1')? navUl.classList.toggle("showNav"):''
 });
 
 // const apiTest = document.getElementById("apiTest");
-// // fetch("src/park.json")
 // fetch('https://ptx.transportdata.tw/MOTC/v2/Air/FIDS/Airport/Departure/TPE?%24top=30&%24format=JSON').then(function (response) {
 //     return response.json();
 //   })
