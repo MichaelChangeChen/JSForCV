@@ -437,7 +437,7 @@ body {
 
     .cardsRight {
       background: rgb(15, 15, 15);
-      border-radius: 10px;
+      border-radius: 4px;
       margin-top: 10px;
       padding: 8px;
       display: flex;
@@ -925,17 +925,17 @@ body {
 
 .cardsBotton {
   .remark {
+    color: rgb(85, 227, 95);
+    text-shadow: 0 0 2px rgb(105, 255, 183);
+  }
+
+  .cancelStyle {
     color: rgb(249, 79, 113);
     text-shadow: 0 0 2px rgb(255, 105, 105);
   }
 
-  .cancelStyle {
-    color: rgb(249, 22, 22);
-    text-shadow: 0 0 3px rgb(247, 99, 99);
-  }
-
   .intimeStyle {
-    color: rgb(43, 223, 97);
-    text-shadow: 0 0 2px rgb(105, 255, 183);
+    color: rgb(84, 175, 249);
+    text-shadow: 0 0 2px rgb(151, 195, 247);
   }
 }

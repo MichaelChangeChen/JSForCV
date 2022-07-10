@@ -137,7 +137,7 @@ function remarkStyle(ele) {
 
 const apiTest = document.getElementById("apiTest");
 fetch(
-  "https://ptx.transportdata.tw/MOTC/v2/Air/FIDS/Airport/Departure/TPE?%24top=100&%24format=JSON"
+  "https://ptx.transportdata.tw/MOTC/v2/Air/FIDS/Airport/Departure/TPE?%24top=200&%24format=JSON"
 )
   .then(function (response) {
     return response.json();

@@ -522,7 +522,7 @@ body {
 
 .cards .cardsTop .cardsRight {
   background: #0f0f0f;
-  border-radius: 10px;
+  border-radius: 4px;
   margin-top: 10px;
   padding: 8px;
   display: -webkit-box;
@@ -1041,17 +1041,17 @@ body {
 }
 
 .cardsBotton .remark {
+  color: #55e35f;
+  text-shadow: 0 0 2px #69ffb7;
+}
+
+.cardsBotton .cancelStyle {
   color: #f94f71;
   text-shadow: 0 0 2px #ff6969;
 }
 
-.cardsBotton .cancelStyle {
-  color: #f91616;
-  text-shadow: 0 0 3px #f76363;
-}
-
 .cardsBotton .intimeStyle {
-  color: #2bdf61;
-  text-shadow: 0 0 2px #69ffb7;
+  color: #54aff9;
+  text-shadow: 0 0 2px #97c3f7;
 }
 /*# sourceMappingURL=style.css.map */
