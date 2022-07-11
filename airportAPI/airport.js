@@ -150,6 +150,8 @@ function remarkStyle(ele) {
   let addClassName;
   ele.indexOf("取消") > -1 ? (addClassName = "cancelStyle") : "";
   ele.indexOf("準時") > -1 ? (addClassName = "intimeStyle") : "";
+  ele.indexOf("客機載貨") > -1 ? (addClassName = "goodsAir") : "";
+  ele.indexOf("時間更改") > -1 ? (addClassName = "changeTime") : "";
   return addClassName;
 }
 
