@@ -41,6 +41,7 @@ const airComp = {
     "IT",
     "VJ",
     "B7",
+    'UK',
   ],
   chi: [
     "中華航空",
@@ -84,6 +85,7 @@ const airComp = {
     "台灣虎航",
     "越捷航空",
     "立榮航空",
+    '維斯塔拉航空',
   ],
 };
 const navbtn = document.querySelector(".navBtn");
