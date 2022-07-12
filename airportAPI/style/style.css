@@ -1054,4 +1054,14 @@ body {
   color: #54aff9;
   text-shadow: 0 0 2px #97c3f7;
 }
+
+.cardsBotton .goodsAir {
+  color: #f9b754;
+  text-shadow: 0 0 2px #f7b797;
+}
+
+.cardsBotton .changeTime {
+  color: #abbb00;
+  text-shadow: 0 0 2px #f9fcb6;
+}
 /*# sourceMappingURL=style.css.map */
