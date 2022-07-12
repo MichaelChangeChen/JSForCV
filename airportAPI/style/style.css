@@ -1,7 +1,7 @@
 section,
 nav,
 body {
-  background: #070118;
+  background: rgb(7, 1, 24);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -15,7 +15,6 @@ body {
   position: fixed;
   top: 0;
 }
-
 .navbar .navbgc {
   height: 50px;
   background: #000;
@@ -29,7 +28,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .navbar .navbgc h1 {
   margin-right: 30px;
   -webkit-transform: rotate(90deg);
@@ -37,11 +35,10 @@ body {
   text-align: center;
   font-size: 40px;
 }
-
 .navbar .navUl {
   -webkit-box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7);
           box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.7);
-  background: #0d0d32;
+  background: rgb(13, 13, 50);
   width: 200px;
   height: 80vh;
   border-radius: 0px 0px 40px 40px;
@@ -64,16 +61,14 @@ body {
   top: 100%;
   right: -300px;
 }
-
 .navbar .navUl li {
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
-
 .navbar .navUl li:hover {
   text-shadow: 2px 0px 20px azure, -2px 0px 20px azure;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   font-weight: 600;
 }
 
@@ -84,36 +79,33 @@ body {
   position: absolute;
   left: calc(50% - 415px);
 }
-
 .videoBlock .topBlobk {
   display: none;
 }
-
 .videoBlock .bottomBlock {
   display: none;
 }
-
 .videoBlock .flightVideo {
   width: 120%;
   position: absolute;
-  top: calc(50% - 560px/2);
-  left: calc(50% - 560px/2);
+  top: calc(50% - 280px);
+  left: calc(50% - 280px);
 }
 
 .black::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2%;
   bottom: 2%;
   left: 0;
   right: 0;
   z-index: 1;
-  background-image: linear-gradient(35deg, rgba(166, 206, 232, 0.6) 0%, #e6b6b6 50%, #e8eac2 100%);
-  -webkit-mask-image: -webkit-linear-gradient(0deg, #000000 0%, #2989d800 30%, #207bca00 70%, #000000 100%);
+  background-image: linear-gradient(35deg, rgba(166, 206, 232, 0.6) 0%, rgb(230, 182, 182) 50%, rgb(232, 234, 194) 100%);
+  -webkit-mask-image: -webkit-linear-gradient(0deg, #000000 0%, rgba(41, 137, 216, 0) 30%, rgba(32, 123, 202, 0) 70%, #000000 100%);
 }
 
 .black::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2%;
   bottom: 2%;
@@ -122,7 +114,7 @@ body {
   background: url(../../imgs/is.jpg) center/cover no-repeat;
   -webkit-filter: blur(3px) saturate(0);
           filter: blur(3px) saturate(0);
-  -webkit-mask-image: -webkit-linear-gradient(0deg, #000000 0%, #2989d800 25%, #207bca00 75%, #000000 100%);
+  -webkit-mask-image: -webkit-linear-gradient(0deg, #000000 0%, rgba(41, 137, 216, 0) 25%, rgba(32, 123, 202, 0) 75%, #000000 100%);
 }
 
 .black {
@@ -131,7 +123,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .black .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,51 +139,46 @@ body {
   background: black;
   mix-blend-mode: hard-light;
 }
-
 .black .head .wind1 {
   display: none;
 }
-
 .black .head .wind2 {
   display: none;
 }
-
 .black .head .wind3 {
   width: 330px;
   height: 500px;
   background: rgba(255, 254, 254, 0.55);
   border-radius: 200px;
-  margin-top: -0px;
+  margin-top: 0px;
   -webkit-box-shadow: inset 10px -10px 30px black;
           box-shadow: inset 10px -10px 30px black;
 }
-
 .black .head h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 50px;
   color: aliceblue;
   position: absolute;
   bottom: 78%;
-  left: calc(45% - 478px/2);
-  text-shadow: 0 0 15px black, 0 0 25px azure;
+  left: calc(45% - 239px);
+  text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 25px azure;
   -webkit-animation: shine1 4s ease-in-out infinite;
           animation: shine1 4s ease-in-out infinite;
 }
-
 .black .head h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 60px;
   color: aliceblue;
   position: absolute;
   bottom: 17%;
-  right: calc(45% - 545px/2);
+  right: calc(45% - 272.5px);
   text-shadow: 0 0 5px black, 0 0 10px azure;
   -webkit-animation: shine2 4s ease-in-out infinite;
           animation: shine2 4s ease-in-out infinite;
 }
 
 .textPage::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0%;
   left: 0;
@@ -209,69 +195,64 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
   letter-spacing: 10px;
   font-variant: small-caps;
-  text-shadow: 7px 5px 10px black, 5px 3px 15px #7ae9ff, 0px 0px 18px white;
+  text-shadow: 7px 5px 10px rgb(0, 0, 0), 5px 3px 15px rgb(122, 233, 255), 0px 0px 18px rgb(255, 255, 255);
 }
-
 .textPage h1 {
   opacity: 0;
   position: absolute;
   top: 5%;
   left: calc(50% - 160px);
   font-size: 100px;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
-
 .textPage h4 {
   opacity: 0;
   position: absolute;
   word-wrap: break-word;
   top: 35%;
-  left: calc(0% - 716px/2);
+  left: calc(0% - 358px);
   font-size: 50px;
   letter-spacing: 5px;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
-
 .textPage h3 {
   opacity: 0;
   position: absolute;
   top: 42%;
-  left: calc(0% - 700px/2);
+  left: calc(0% - 350px);
   font-size: 30px;
   letter-spacing: 5px;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
-
 .textPage h2 {
   opacity: 0;
   width: 674px;
   position: absolute;
   top: 55%;
-  left: calc(100% - 673px/2);
+  left: calc(100% - 336.5px);
   font-size: 65px;
   letter-spacing: 5px;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
-
 .textPage h5 {
   opacity: 0;
   position: absolute;
   top: 90%;
-  left: calc(50% - 680px/2);
+  left: calc(50% - 340px);
   font-size: 100px;
   letter-spacing: 10px;
-  text-shadow: 7px 5px 10px black, 5px 3px 15px #ff8a8a, 0px 0px 18px white;
-  -webkit-transition: .6s ease-in-out;
-  transition: .6s ease-in-out;
+  text-shadow: 7px 5px 10px rgb(0, 0, 0), 5px 3px 15px rgb(255, 138, 138), 0px 0px 18px rgb(255, 255, 255);
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .mainTitle {
@@ -292,33 +273,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .6s ease-in;
-  transition: .6s ease-in;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
 }
-
 .mainTitle h1 {
   color: aliceblue;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
   font-size: 100px;
   letter-spacing: 5px;
   font-variant: small-caps;
-  text-shadow: 7px 5px 10px black, 5px 3px 15px #bd5aeb, 0px 0px 18px #79e8fc;
+  text-shadow: 7px 5px 10px rgb(0, 0, 0), 5px 3px 15px rgb(189, 90, 235), 0px 0px 18px rgb(121, 232, 252);
   -webkit-animation: shine3 2.5s ease-out infinite;
           animation: shine3 2.5s ease-out infinite;
 }
-
 .mainTitle .bottomLine {
   width: 60%;
   height: 2px;
   background: white;
-  -webkit-box-shadow: 7px 5px 10px black, 5px 3px 15px #bd5aeb, 0px 0px 18px #79e8fc;
-          box-shadow: 7px 5px 10px black, 5px 3px 15px #bd5aeb, 0px 0px 18px #79e8fc;
+  -webkit-box-shadow: 7px 5px 10px rgb(0, 0, 0), 5px 3px 15px rgb(189, 90, 235), 0px 0px 18px rgb(121, 232, 252);
+          box-shadow: 7px 5px 10px rgb(0, 0, 0), 5px 3px 15px rgb(189, 90, 235), 0px 0px 18px rgb(121, 232, 252);
   animation: shine3 2.5s ease-out infinite reverse;
 }
 
 #apiTest:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0%;
   left: 0;
@@ -349,7 +328,7 @@ body {
 
 .cards {
   z-index: 1;
-  background: #252514;
+  background: rgb(37, 37, 20);
   margin: 0 auto;
   width: 90%;
   border-radius: 15px;
@@ -357,17 +336,14 @@ body {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
-
 .cards p {
-  color: yellow;
+  color: rgb(255, 255, 0);
   font-size: 15px;
 }
-
 .cards h1 {
-  color: yellow;
+  color: rgb(255, 255, 0);
   font-size: 24px;
 }
-
 .cards .cardsTop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,7 +352,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .cards .cardsTop .cardsLeft {
   width: 85%;
   display: -webkit-box;
@@ -385,56 +360,47 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .cards .cardsTop .cardsLeft .airlines {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
-
 .cards .cardsTop .cardsLeft .airlines h1 {
-  text-shadow: 0 0 2px #ffff5d;
+  text-shadow: 0 0 2px rgb(255, 255, 93);
 }
-
 .cards .cardsTop .cardsLeft .airlines h1 p {
   font-size: 12px;
   line-height: 10px;
   margin-left: 15px;
-  color: white;
-  text-shadow: 0 0 5px yellow;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgb(255, 255, 0);
 }
-
 .cards .cardsTop .cardsLeft .flight {
   margin-left: auto;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
-
 .cards .cardsTop .cardsLeft .flight h1 {
-  text-shadow: 0 0 2px #ffff5d;
+  text-shadow: 0 0 2px rgb(255, 255, 93);
 }
-
 .cards .cardsTop .cardsLeft .flight h1 p {
-  text-shadow: 0 0 5px yellow;
+  text-shadow: 0 0 5px rgb(255, 255, 0);
   font-size: 12px;
   line-height: 10px;
   margin-left: 25px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox:hover .timeCard {
   -webkit-transform: rotateX(90deg);
           transform: rotateX(90deg);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox:hover .etd {
   -webkit-animation: shake 1s ease-in-out;
           animation: shake 1s ease-in-out;
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -444,7 +410,6 @@ body {
           flex-grow: 1;
   justify-self: flex-end;
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox .timeCard {
   height: 30px;
   -webkit-transform-origin: top;
@@ -456,46 +421,42 @@ body {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox .timeCard .std {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 5px;
   padding: 3px;
-  -webkit-box-shadow: 3px 3px 8px #0b0b0b;
-          box-shadow: 3px 3px 8px #0b0b0b;
+  -webkit-box-shadow: 3px 3px 8px rgb(11, 11, 11);
+          box-shadow: 3px 3px 8px rgb(11, 11, 11);
   width: 100%;
-  background: #0f0f0f;
+  background: rgb(15, 15, 15);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox .timeCard .std h1:nth-child(2) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: #555b00;
+  color: rgb(85, 91, 0);
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox .timeCard .std h1:nth-child(1) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: yellow;
-  text-shadow: 0 0 2px #ffff5d;
+  color: rgb(255, 255, 0);
+  text-shadow: 0 0 2px rgb(255, 255, 93);
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox .timeCard .etd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 3px;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 8px #0b0b0b;
-          box-shadow: 3px 3px 8px #0b0b0b;
+  -webkit-box-shadow: 3px 3px 8px rgb(11, 11, 11);
+          box-shadow: 3px 3px 8px rgb(11, 11, 11);
   width: 100%;
-  background: #1e1e11;
+  background: rgb(30, 30, 17);
   -webkit-transform-origin: top;
           transform-origin: top;
   -webkit-transform: rotateX(-90deg);
@@ -503,25 +464,22 @@ body {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox .timeCard .etd h1:nth-child(2) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: yellow;
-  text-shadow: 0 0 3px yellow;
+  color: rgb(255, 255, 0);
+  text-shadow: 0 0 3px rgb(255, 255, 0);
 }
-
 .cards .cardsTop .cardsLeft .timeCardBox .timeCard .etd h1:nth-child(1) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  color: yellow;
-  text-shadow: 0 0 2px yellow;
+  color: rgb(255, 255, 0);
+  text-shadow: 0 0 2px rgb(255, 255, 0);
 }
-
 .cards .cardsTop .cardsRight {
-  background: #0f0f0f;
+  background: rgb(15, 15, 15);
   border-radius: 4px;
   margin-top: 10px;
   padding: 8px;
@@ -536,7 +494,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 4px;
-  text-shadow: 0 0 2px yellow;
+  text-shadow: 0 0 2px rgb(255, 255, 0);
 }
 
 .cards:hover {
@@ -551,7 +509,6 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-
 .cardsBotton h2 {
   margin-bottom: -10px;
   font-size: 12px;
@@ -565,9 +522,8 @@ body {
       -ms-flex-positive: 0;
           flex-grow: 0;
   color: white;
-  text-shadow: 0 0 3px yellow;
+  text-shadow: 0 0 3px rgb(255, 255, 0);
 }
-
 .cardsBotton h1:nth-child(1) {
   font-size: 15px;
   line-height: 20px;
@@ -576,9 +532,8 @@ body {
           flex-grow: 0;
   color: white;
   margin-left: 10px;
-  text-shadow: 0 0 3px yellow;
+  text-shadow: 0 0 3px rgb(255, 255, 0);
 }
-
 .cardsBotton h1:nth-child(2) {
   font-size: 22px;
   text-align: center;
@@ -623,11 +578,11 @@ body {
   .navbar .navUl li {
     width: 100px;
     padding: 10px 0;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   .videoBlock .flightVideo {
-    left: calc(50% - 990px/2);
+    left: calc(50% - 495px);
   }
   .black {
     margin-top: 0;
@@ -662,11 +617,11 @@ body {
   .black .head h2 {
     font-size: 70px;
     bottom: 28%;
-    left: calc(40% - 670px/2);
+    left: calc(40% - 335px);
   }
   .black .head h1 {
     font-size: 90px;
-    right: calc(45% - 818px/2);
+    right: calc(45% - 409px);
   }
   .textPage h1 {
     top: 5%;
@@ -674,22 +629,22 @@ body {
     font-size: 120px;
   }
   .textPage h4 {
-    left: calc(0% - 962px/2);
+    left: calc(0% - 481px);
     font-size: 70px;
   }
   .textPage h3 {
     top: 44%;
-    left: calc(10% - 800px/2);
+    left: calc(10% - 400px);
   }
   .textPage h2 {
     width: 719px;
     top: 56%;
     font-size: 70px;
-    left: calc(100% - 719px/2);
+    left: calc(100% - 359.5px);
   }
   .textPage h5 {
     top: 90%;
-    left: calc(50% - 738px/2);
+    left: calc(50% - 369px);
     font-size: 110px;
   }
   #apiTest {
@@ -704,35 +659,34 @@ body {
     opacity: 1;
     top: 15%;
     left: calc(50% - 160px);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow2 {
     opacity: 1;
-    left: calc(50% - 962px/2);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: calc(50% - 481px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow3 {
     opacity: 1;
-    left: calc(50% - 800px/2);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: calc(50% - 400px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow4 {
     opacity: 1;
-    left: calc(50% - 719px/2);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: calc(50% - 359.5px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow5 {
     opacity: 1;
     top: 74%;
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
 }
-
 @media (max-width: 750px) {
   .black::before {
     content: none;
@@ -742,16 +696,16 @@ body {
   }
   .black .videoBlock .flightVideo {
     width: 120%;
-    top: calc(50% - 560px/2);
-    left: calc(50% - 990px/2);
+    top: calc(50% - 280px);
+    left: calc(50% - 495px);
   }
   .black .videoBlock .topBlobk {
     z-index: 1;
     width: 100%;
     height: 60px;
-    background: #141414;
-    -webkit-box-shadow: 5px 0px 25px black;
-            box-shadow: 5px 0px 25px black;
+    background: rgb(20, 20, 20);
+    -webkit-box-shadow: 5px 0px 25px rgb(0, 0, 0);
+            box-shadow: 5px 0px 25px rgb(0, 0, 0);
     display: block;
     position: absolute;
     top: 0;
@@ -759,9 +713,9 @@ body {
   .black .videoBlock .bottomBlock {
     width: 100%;
     height: 70px;
-    background: #141414;
-    -webkit-box-shadow: -5px 0px 25px black;
-            box-shadow: -5px 0px 25px black;
+    background: rgb(20, 20, 20);
+    -webkit-box-shadow: -5px 0px 25px rgb(0, 0, 0);
+            box-shadow: -5px 0px 25px rgb(0, 0, 0);
     display: block;
     position: absolute;
     bottom: 0;
@@ -811,37 +765,36 @@ body {
   section .textPage .textShow1 {
     opacity: 1;
     top: 15%;
-    left: calc(50% - 222px/2);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: calc(50% - 111px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow2 {
     opacity: 1;
-    left: calc(50% - 450px/2);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: calc(50% - 225px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow3 {
     opacity: 1;
-    left: calc(50% - 434px/2);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: calc(50% - 217px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow4 {
     opacity: 1;
-    left: calc(50% - 350px/2);
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: calc(50% - 175px);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
   section .textPage .textShow5 {
     opacity: 1;
-    left: calc(50% - 450px/2);
+    left: calc(50% - 225px);
     top: 74%;
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
   }
 }
-
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: rotateX(-90deg);
@@ -868,7 +821,6 @@ body {
             transform: rotateX(-90deg);
   }
 }
-
 @keyframes shake {
   0% {
     -webkit-transform: rotateX(-90deg);
@@ -895,7 +847,6 @@ body {
             transform: rotateX(-90deg);
   }
 }
-
 @-webkit-keyframes shine1 {
   0% {
     text-shadow: 0 0 5px black, 0 0 10px azure;
@@ -910,7 +861,6 @@ body {
     text-shadow: 0 0 5px black, 0 0 10px azure;
   }
 }
-
 @keyframes shine1 {
   0% {
     text-shadow: 0 0 5px black, 0 0 10px azure;
@@ -925,7 +875,6 @@ body {
     text-shadow: 0 0 5px black, 0 0 10px azure;
   }
 }
-
 @-webkit-keyframes shine2 {
   0% {
     text-shadow: 0 0 5px black, 0 0 5px azure;
@@ -940,7 +889,6 @@ body {
     text-shadow: 0 0 5px black, 0 0 5px azure;
   }
 }
-
 @keyframes shine2 {
   0% {
     text-shadow: 0 0 5px black, 0 0 5px azure;
@@ -955,83 +903,76 @@ body {
     text-shadow: 0 0 5px black, 0 0 5px azure;
   }
 }
-
 @-webkit-keyframes shine3 {
   0% {
-    text-shadow: 5px 5px 8px black, 2px 2px 14px #edbebe, 3px 3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, 2px 2px 14px rgb(237, 190, 190), 3px 3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   25% {
-    text-shadow: 5px 5px 8px black, -2px 2px 14px #edbebe, 3px -3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, -2px 2px 14px rgb(237, 190, 190), 3px -3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   50% {
-    text-shadow: 5px 5px 8px black, -2px -2px 14px #edbebe, -3px -3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, -2px -2px 14px rgb(237, 190, 190), -3px -3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   75% {
-    text-shadow: 5px 5px 8px black, 2px -2px 14px #edbebe, -3px 3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, 2px -2px 14px rgb(237, 190, 190), -3px 3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   100% {
-    text-shadow: 5px 5px 8px black, 2px 2px 14px #edbebe, 3px 3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, 2px 2px 14px rgb(237, 190, 190), 3px 3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
 }
-
 @keyframes shine3 {
   0% {
-    text-shadow: 5px 5px 8px black, 2px 2px 14px #edbebe, 3px 3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, 2px 2px 14px rgb(237, 190, 190), 3px 3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   25% {
-    text-shadow: 5px 5px 8px black, -2px 2px 14px #edbebe, 3px -3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, -2px 2px 14px rgb(237, 190, 190), 3px -3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   50% {
-    text-shadow: 5px 5px 8px black, -2px -2px 14px #edbebe, -3px -3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, -2px -2px 14px rgb(237, 190, 190), -3px -3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   75% {
-    text-shadow: 5px 5px 8px black, 2px -2px 14px #edbebe, -3px 3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, 2px -2px 14px rgb(237, 190, 190), -3px 3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
   100% {
-    text-shadow: 5px 5px 8px black, 2px 2px 14px #edbebe, 3px 3px 18px #a4ecfa, 0px 0px 10px #ece399;
+    text-shadow: 5px 5px 8px black, 2px 2px 14px rgb(237, 190, 190), 3px 3px 18px rgb(164, 236, 250), 0px 0px 10px rgb(236, 227, 153);
   }
 }
-
 .showNav {
   -webkit-transform: translateX(-300px);
           transform: translateX(-300px);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .textPage .textShow1 {
   opacity: 1;
   top: 15%;
-  -webkit-transition: .4s ease-out;
-  transition: .4s ease-out;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
-
 .textPage .textShow2 {
   opacity: 1;
-  left: calc(50% - 716px/2);
-  -webkit-transition: .4s ease-out;
-  transition: .4s ease-out;
+  left: calc(50% - 358px);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
-
 .textPage .textShow3 {
   opacity: 1;
-  left: calc(50% - 700px/2);
-  -webkit-transition: .4s ease-out;
-  transition: .4s ease-out;
+  left: calc(50% - 350px);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
-
 .textPage .textShow4 {
   opacity: 1;
-  left: calc(50% - 673px/2);
-  -webkit-transition: .4s ease-out;
-  transition: .4s ease-out;
+  left: calc(50% - 336.5px);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
-
 .textPage .textShow5 {
   opacity: 1;
   top: 75%;
-  -webkit-transition: .4s ease-out;
-  transition: .4s ease-out;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
 }
 
 .textShow6 {
@@ -1041,27 +982,22 @@ body {
 }
 
 .cardsBotton .remark {
-  color: #55e35f;
-  text-shadow: 0 0 2px #69ffb7;
+  color: rgb(85, 227, 95);
+  text-shadow: 0 0 2px rgb(105, 255, 183);
 }
-
 .cardsBotton .cancelStyle {
-  color: #f94f71;
-  text-shadow: 0 0 2px #ff6969;
+  color: rgb(249, 79, 113);
+  text-shadow: 0 0 2px rgb(255, 105, 105);
 }
-
 .cardsBotton .intimeStyle {
-  color: #54aff9;
-  text-shadow: 0 0 2px #97c3f7;
+  color: rgb(84, 175, 249);
+  text-shadow: 0 0 2px rgb(151, 195, 247);
 }
-
 .cardsBotton .goodsAir {
-  color: #f9b754;
-  text-shadow: 0 0 2px #f7b797;
+  color: rgb(249, 183, 84);
+  text-shadow: 0 0 2px rgb(247, 183, 151);
 }
-
 .cardsBotton .changeTime {
-  color: #abbb00;
-  text-shadow: 0 0 2px #f9fcb6;
-}
-/*# sourceMappingURL=style.css.map */
+  color: rgb(171, 187, 0);
+  text-shadow: 0 0 2px rgb(249, 252, 182);
+}/*# sourceMappingURL=style.css.map */
