@@ -994,10 +994,10 @@ body {
   text-shadow: 0 0 2px rgb(151, 195, 247);
 }
 .cardsBotton .goodsAir {
-  color: rgb(249, 183, 84);
-  text-shadow: 0 0 2px rgb(247, 183, 151);
-}
-.cardsBotton .changeTime {
   color: rgb(171, 187, 0);
   text-shadow: 0 0 2px rgb(249, 252, 182);
+}
+.cardsBotton .changeTime {
+  color: rgb(249, 183, 84);
+  text-shadow: 0 0 2px rgb(247, 183, 151);
 }/*# sourceMappingURL=style.css.map */
