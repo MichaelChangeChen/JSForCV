@@ -4,5 +4,5 @@
 // })
 
 module.exports = {
-	publicPath: '/JustForCV/'
+	publicPath: '/JustForCV/flight-schedules'
 }
